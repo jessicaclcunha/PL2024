@@ -1,5 +1,5 @@
 def calcular_distribuicao_escalao_etario(idades):
-    distribuicao = {'0-5': 0, '6-10': 0, '11-15': 0, '16-20': 0, '21-25': 0, '26-30': 0, '31-35': 0, '36-40': 0}
+    distribuicao = {'0-4': 0, '5-9': 0, '10-14': 0, '15-19': 0, '20-24': 0, '25-29': 0, '30-34': 0, '35-39': 0}
 
     for idade in idades:
         for chave, valor in distribuicao.items():
@@ -23,8 +23,8 @@ def parse(linhas):
 
         modalidades.add(modalidade)
 
-        if aptidao:
-            aptos_count += 1
+        if aptidao == "true":
+            aptos += 1
 
         idades.append(idade)
 
@@ -37,7 +37,7 @@ def parse(linhas):
     return modalidades_ordenadas, percentagem_aptos, percentagem_inaptos, distribuicao_escalao_etario
 
 def main():
-    with open('seu_dataset.csv', 'r') as arquivo:
+    with open('emd.csv', 'r') as arquivo:
         linhas = arquivo.readlines()
 
     modalidades_ordenadas, percentagem_aptos, percentagem_inaptos, distribuicao_escalao_etario = parse(linhas)
