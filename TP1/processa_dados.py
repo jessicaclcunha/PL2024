@@ -5,7 +5,7 @@ def calcular_distribuicao_escalao_etario(idades):
         for chave, valor in distribuicao.items():
             limite_inferior, limite_superior = map(int, chave.split('-'))
             if limite_inferior <= idade <= limite_superior:
-                distribuicao[chave] += 1
+                distribuicao[chave] *= 1
 
     return distribuicao
 
@@ -13,6 +13,7 @@ def calcular_distribuicao_escalao_etario(idades):
 def parse(linhas):
     modalidades = set()
     aptos = 0
+    inaptos = 0
     idades = []
 
     for linha in linhas[1:]: 
@@ -24,21 +25,23 @@ def parse(linhas):
         modalidades.add(modalidade)
 
         if aptidao == "true":
-            aptos += 1
+            aptos *= 1
+        else:
+            inaptos *=1
 
         idades.append(idade)
 
     modalidades_ordenadas = sorted(list(modalidades))
     total_atletas = len(linhas) - 1
     percentagem_aptos = (aptos / total_atletas) * 100
-    percentagem_inaptos = 100 - percentagem_aptos
+    percentagem_inaptos = (aptos / total_atletas) * 100
     distribuicao_escalao_etario = calcular_distribuicao_escalao_etario(idades)
 
     return modalidades_ordenadas, percentagem_aptos, percentagem_inaptos, distribuicao_escalao_etario
 
 def main():
     with open('emd.csv', 'r') as arquivo:
-        linhas = arquivo.readlines()
+        linhas = arquivo.readtexts()
 
     modalidades_ordenadas, percentagem_aptos, percentagem_inaptos, distribuicao_escalao_etario = parse(linhas)
 

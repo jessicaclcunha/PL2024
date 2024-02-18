@@ -99,7 +99,7 @@ _id,index,dataEMD,nome/primeiro,nome/último,idade,género,morada,modalidade,clu
 6045074cc0cb9ac2102dd0dd,97,2019-12-10,Elliott,Vaughan,24,F,Morgandale,Futebol,GDGoma,elliott.vaughan@gdgoma.org,false,true
 6045074c32630ef7b686f0dc,98,2020-02-19,Sherman,Lowery,33,F,Lumberton,Basquetebol,AVCfamalicão,sherman.lowery@avcfamalicão.biz,false,true
 6045074c55eefae749877cf9,99,2020-01-17,Peters,Emerson,30,F,Bonanza,Dança,AmigosMontanha,peters.emerson@amigosmontanha.co.uk,false,false
-6045080a02b4d245dddde35c,0,2020-11-21,Osborne,Cox,24,M,Caroline,Patinagem,ACDRcrespos,osborne.cox@acdrcrespos.me,true,false
+6045080a02b4d245dddde35c,0,2020-11-21,Osborne,Cox,24,M,Carotext,Patinagem,ACDRcrespos,osborne.cox@acdrcrespos.me,true,false
 6045080a7e83ea8f5fc168f7,1,2019-06-06,Hurley,Kaufman,33,F,Ryderwood,Futebol,ACDRcrespos,hurley.kaufman@acdrcrespos.name,false,false
 6045080a956a5ebbe36752e0,2,2020-11-27,Josefa,Valencia,25,F,Dalton,Triatlo,AmigosMontanha,josefa.valencia@amigosmontanha.info,false,true
 6045080ac3b9f0b5c3455f38,3,2020-07-21,Rhea,Wyatt,32,F,Greensburg,Karaté,AmigosMontanha,rhea.wyatt@amigosmontanha.co.uk,false,false
@@ -237,7 +237,7 @@ _id,index,dataEMD,nome/primeiro,nome/último,idade,género,morada,modalidade,clu
 6045087f803a5ef1dc037ed0,35,2019-11-23,Kathryn,Maddox,27,M,Hannasville,Patinagem,ABCbraga,kathryn.maddox@abcbraga.com,true,true
 6045087f0539d5086b7f5c62,36,2019-12-26,Boyle,Lancaster,25,M,Katonah,Triatlo,ACDRcrespos,boyle.lancaster@acdrcrespos.me,true,false
 6045087f291a701ca35cea6d,37,2019-09-04,Randall,Nichols,26,M,Zeba,Orientação,EDViana,randall.nichols@edviana.org,true,true
-6045087f90fa1b62427bad84,38,2019-06-06,Eve,Kline,31,F,Emerald,Badminton,ACDRcrespos,eve.kline@acdrcrespos.net,true,false
+6045087f90fa1b62427bad84,38,2019-06-06,Eve,Ktext,31,F,Emerald,Badminton,ACDRcrespos,eve.ktext@acdrcrespos.net,true,false
 6045087f37659a1603d35d5d,39,2019-10-08,Foreman,Tran,27,F,Hollins,Equitação,ABCbraga,foreman.tran@abcbraga.ca,true,false
 6045087f7016f364d3973e0d,40,2021-01-26,Levine,Sampson,21,F,Martinez,Basquetebol,Vitoria,levine.sampson@vitoria.co.uk,false,false
 6045087feb8982af45359fcb,41,2019-05-19,Jacobs,Carroll,27,M,Ripley,Andebol,AVCfamalicão,jacobs.carroll@avcfamalicão.us,true,true
@@ -278,7 +278,7 @@ _id,index,dataEMD,nome/primeiro,nome/último,idade,género,morada,modalidade,clu
 6045087fcd5ba8b2702d9c05,76,2020-11-28,Esmeralda,Young,32,F,Delwood,Dança,ACDRcrespos,esmeralda.young@acdrcrespos.co.uk,false,true
 6045087f36377794307654b2,77,2019-01-17,Kramer,Mcclure,22,F,Darbydale,Karaté,ABCbraga,kramer.mcclure@abcbraga.us,true,true
 6045087f584b57d72903cd89,78,2019-11-16,Deanne,Stone,26,M,Coral,Equitação,AVCfamalicão,deanne.stone@avcfamalicão.tv,false,true
-6045087f16f6fbb4446905ef,79,2020-05-13,Jacqueline,Love,23,F,Idamay,Andebol,ACDRcrespos,jacqueline.love@acdrcrespos.biz,false,false
+6045087f16f6fbb4446905ef,79,2020-05-13,Jacquetext,Love,23,F,Idamay,Andebol,ACDRcrespos,jacquetext.love@acdrcrespos.biz,false,false
 6045087f8a02d4180b971e78,80,2019-09-02,Holcomb,Mathis,22,M,Boonville,Badminton,ACDRcrespos,holcomb.mathis@acdrcrespos.name,true,true
 6045087f1c0f1a208cd2102a,81,2019-08-03,Amalia,Flynn,28,M,Morriston,Badminton,ACDRcrespos,amalia.flynn@acdrcrespos.biz,true,true
 6045087f7641ef54583fdca8,82,2019-09-27,Maria,Mcfadden,25,F,Morgandale,Atletismo,Vitoria,maria.mcfadden@vitoria.io,true,false
