@@ -26,10 +26,8 @@ def mdToHTML(text):
             html_output.append(f'<h{len(header_match.group(1))}>{header_match.group(2)}</h{len(header_match.group(1))}>')
             continue
 
-        # Bold
+        # Bold and Italic
         line = re.sub(r'\*\*(.*?)\*\*|__(.*?)__', r'<b>\1\2</b>', line)
-
-        # Itálico
         line = re.sub(r'\*(.*?)\*|_(.*?)_', r'<i>\1\2</i>', line)
 
         # Image
@@ -54,7 +52,7 @@ def mdToHTML(text):
                 html_output.append('<ul>')
                 in_unordered_list = True
             html_output.append(f'<li>{unordered_list_match.group(2)}</li>')
-        elif line.startswith('</li>'):
+        elif line.strip().startswith('</li>'):
             if in_ordered_list or in_unordered_list:
                 html_output.append('</li>')
         else:
@@ -66,16 +64,15 @@ def mdToHTML(text):
                 in_blockquote = True
                 html_output.append(f'<p>{blockquote_match.group(1)}</p>')
             elif in_blockquote:
-                in_blockquote = False
-                html_output.append('</blockquote>')
                 html_output.append(line)
             else:
+                close_lists_and_blockquote()
                 html_output.append(line)
 
     close_lists_and_blockquote()
     return '\n'.join(html_output)
 
-# Exemplo de uso
+# Example usage
 markdown_input = """
 # Título
 Este é um **exemplo** de conversor de *Markdown para HTML*.
