@@ -10,4 +10,5 @@ Jéssica Cristina Lima da Cunha, A100901
 - Quando, no texto, aparecer "on" ativa o modo de soma;
 - Quando, no texto, aparecer "off" desativa o modo de soma;
 - Sempre que aparece "=", no texto, imprime a soma acumulativa até ao momento
+- O somador funciona para números com sinal e com números no meio de palavras
 
