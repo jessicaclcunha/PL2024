@@ -16,36 +16,30 @@ Jéssica Cristina Lima da Cunha, A100901
     S
 
 ### Produções
-    S -> '?' Atribuição 
-        | '!' Expressão 
-        | var '=' Expressão
-    LA(S) = {'?', '!', var}
+    S -> '?' Atribuição          | LA = {'?'}
+        | '!' Expressão          | LA = {'!'}
+        | var '=' Expressão      | LA = {var}
 
 
     Atribuição -> var '=' Expressão
-    LA(Atribuição) = {var}
 
 
-    Expressão -> Termo 
-        | Expressão '+' Termo 
-        | Expressão '-' Termo
-    LA(Expressão) = {'(', var, num}
+    Expressão -> ε               | LA = {')'}
+        | '+' Termo              | LA = {'+'}
+        | '-' Termo              | LA = {'-'}
 
 
-    Termo -> Fator 
-        | Termo '*' Fator 
-        | Termo '/' Fator
-    LA(Termo) = {'(', var, num}
+    Termo -> ε                   |  LA = {'+', '-', ')'}
+        | '*' Fator              |  LA = {'*''}
+        | '/' Fator              |  LA = {'/''}
 
 
-    Fator -> '(' Expressão ')' 
-        | var 
-        | num
-    LA(Fator) = {'(', var, num}
+    Fator -> '(' Expressão ')'   |  LA = {'('}
+        | var                    |  LA = {var}
+        | num                    |  LA = {num}
 
 ## Frase exemplo
     ?a 
     b=a*2/(27-3)
     !a+b
     c=a*b/(a/b)
-
